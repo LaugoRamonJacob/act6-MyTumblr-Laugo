@@ -78,9 +78,9 @@ body {
             <div class="px-4 py-3">
                 <h5 class="mb-0">Expertise </h5>
                 <div class="p-4 rounded shadow-sm bg-light">
-                    <p class="font-italic mb-0">Full-stack Web Developer</p>
-                    <p class="font-italic mb-0">Mobile App Developer</p>
-                    <p class="font-italic mb-0">Photographer/Videographer</p>
+                    <p class="font-italic mb-0">Game Developer</p>
+                    <p class="font-italic mb-0">Professional Esport Player</p>
+                    <p class="font-italic mb-0">Professional Skateboarder</p>
                 </div>
             </div>
 
