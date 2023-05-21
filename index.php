@@ -8,6 +8,32 @@ $acc_password = "blabla";
 $acc_fullname = "Ryan Clifford L. Perez";
 $acc_address = "Marinduque PH";
 
+//check the current url for the redirections later
+$url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+//condition to know if the button is clicked
+if(isset($_REQUEST['login_button']) === true){
+	//get the username and password from the form and compare to the predefined username and password
+		//kapag mali agad yung username
+		if($_REQUEST['form_username'] != $acc_username){
+			header("Location: ".$url_add."?notexist");
+		}
+		//tama ang username pero mali ang password
+		elseif ($_REQUEST['form_username'] == $acc_username && $_REQUEST['form_password'] != $acc_password){
+			header("Location: ".$url_add."?wrongpass");			
+		}
+		//tama ang username at password
+		elseif ($_REQUEST['form_username']==$acc_username && $_REQUEST['form_password'] == $acc_password){
+			header("Location: ".$url_add."?success");
+			
+			//create a session variable
+			$_SESSION['ses_username'] = $acc_username;
+			$_SESSION['ses_password']	= $acc_password;
+			$_SESSION['ses_fullname']	= $acc_fullname;
+			$_SESSION['ses_address']	= $acc_address;
+
+		}//end of correct username and password
+}//end of login button
+
 ?>
 <!doctype html>
 <html lang="en">
