@@ -37,7 +37,7 @@ if (isset($_SESSION['ses_username'])===false){
 
 body {
     background: #654ea3;
-    background: linear-gradient(to right, #e96443, #904e95);
+    background: linear-gradient(to right, #B30000, #0017B2);
     min-height: 100vh;
     overflow-x: hidden
 }</style>
@@ -49,7 +49,7 @@ body {
         <div class="bg-white shadow rounded overflow-hidden">
             <div class="px-4 pt-0 pb-4 cover">
                 <div class="media align-items-end profile-head">
-                    <div class="profile mr-3"><img src="images/profile1.jpg" alt="..." width="150" class="rounded mb-2 img-thumbnail"><a href="?logout" class="btn btn-outline-dark btn-sm btn-block">Sign out</a>
+                    <div class="profile mr-3"><img src="images/profile2.jpg" alt="..." width="150" class="rounded mb-2 img-thumbnail"><a href="?logout" class="btn btn-outline-dark btn-sm btn-block">Sign out</a>
 
 
                     </div>
